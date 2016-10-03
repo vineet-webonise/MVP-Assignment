@@ -10,32 +10,33 @@ import UIKit
 import Swift
 
 @objc protocol MyViewModelDelegate{
-    func sendResponse(responseObject: NSDictionary)
+    func sendResponse(responseObject: AnyObject)
     func sendError(errorMessage:String)
 }
 
 class UserListViewModel: NSObject, NetworkConnectionHandlerDelegate {
+    
+    // MARK: Variable Declaration
     var userListModel :UserListModel!
-    var arrayUsersListModel :NSMutableArray = []
+    var arrayUsersListModel : NSMutableArray = []
+    var arrayUsersListResponse : NSMutableArray = []
     var viewModelDelegate: MyViewModelDelegate?
     
-    /**
-     This method will call API for getting invoice list
-     */
+    //This method will call API for getting User list
     func getUserList() {
         
         let networkDelegateHandler = NetworkConnectionHandler()
         networkDelegateHandler.networkDelegate = self
         networkDelegateHandler.getUserList(withTag: 0)
-        
     }
     
+    // MARK: Network Connection Methods
     func networkConnectionFinishedSuccessfully(responseObject: AnyObject, tag: NSInteger) {
         
         if tag == 0 {
             
-            arrayUsersListModel = parseDataIntoModel(responseArray: responseObject as! NSArray)
-            viewModelDelegate?.sendResponse(responseObject: responseObject as! NSDictionary)
+            arrayUsersListModel = parseDataIntoModel(responseArray: responseObject) 
+            viewModelDelegate?.sendResponse(responseObject: responseObject)
         }
         else {
             print(responseObject)
@@ -53,16 +54,17 @@ class UserListViewModel: NSObject, NetworkConnectionHandlerDelegate {
     func networkStatusInactive() {
         print("No internet connection")
     }
-    
-    func parseDataIntoModel(responseArray :NSArray) -> NSMutableArray {
+   
+    // MARK: Parsing & Data handling methods
+    func parseDataIntoModel(responseArray :AnyObject) -> NSMutableArray {
         let arrayUsers :NSMutableArray = []
-        
         for index in 0 ..< responseArray.count {
-            //userListModel = UserListModel()
-             // userListModel.userName = responseArray[index]["name"] as? String
-            //userListModel.userName = responseArray.index(of: index)["name"] as! String
-//            userListModel.userName = responseArray[index]["email"] as! String
-//            userListModel.userName = responseArray[index]["body"] as! String
+            if let userDictionary = responseArray[index] as? [String:AnyObject]{
+                userListModel = UserListModel()
+                userListModel.mUserName  = userDictionary ["name"] as! String
+                userListModel.mUserEmail = userDictionary["email"] as! String
+                userListModel.mUserBody = userDictionary["body"] as! String
+            }
             arrayUsers.add(userListModel)
         }
         
@@ -75,6 +77,7 @@ class UserListViewModel: NSObject, NetworkConnectionHandlerDelegate {
         return userListModelObject
     }
     
+    // Returning the Users count
     func getCountOfUsers() -> Int {
         return arrayUsersListModel.count
     }

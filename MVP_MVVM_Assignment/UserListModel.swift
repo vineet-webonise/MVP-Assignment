@@ -9,7 +9,9 @@
 import UIKit
 
 class UserListModel: NSObject {
-    var userName :String!
-    var userEmail :String!
-    var userBody :String!
+    
+    // MARK: Variable Declaration
+    var mUserName :String!
+    var mUserEmail :String!
+    var mUserBody :String!
 }

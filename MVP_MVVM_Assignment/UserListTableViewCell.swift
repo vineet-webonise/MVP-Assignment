@@ -10,6 +10,7 @@ import UIKit
 
 class UserListTableViewCell: UITableViewCell {
 
+    // MARK: IBOutlets
     @IBOutlet weak var userName: UILabel!
     @IBOutlet weak var userEmail: UILabel!
     @IBOutlet weak var userBody: UILabel!

@@ -21,29 +21,29 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MnL-B6-vEq">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="userCell" rowHeight="70" id="6pV-Ny-gJc" customClass="UserListTableViewCell" customModule="MVP_MVVM_Assignment" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="70"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="userCell" rowHeight="75" id="6pV-Ny-gJc" customClass="UserListTableViewCell" customModule="MVP_MVVM_Assignment" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6pV-Ny-gJc" id="uza-PJ-vaQ">
-                                            <frame key="frameInset" width="375" height="69"/>
+                                            <frame key="frameInset" width="375" height="75"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HFe-Mc-MYV">
-                                                    <frame key="frameInset" minX="16" width="351" height="13"/>
+                                                    <frame key="frameInset" minX="16" minY="2" width="351" height="13"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qzI-VM-5dL">
-                                                    <frame key="frameInset" minX="16" minY="38" width="351" height="28"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qzI-VM-5dL">
+                                                    <frame key="frameInset" minX="16" minY="40" width="351" height="28"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Gv-Uy-OfJ">
-                                                    <frame key="frameInset" minX="16" minY="18" width="351" height="14"/>
+                                                    <frame key="frameInset" minX="16" minY="20" width="351" height="14"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
                                                     <nil key="textColor"/>
@@ -52,8 +52,8 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="userBody" destination="9Gv-Uy-OfJ" id="Lcb-xE-fYW"/>
-                                            <outlet property="userEmail" destination="qzI-VM-5dL" id="tCD-Il-VF2"/>
+                                            <outlet property="userBody" destination="qzI-VM-5dL" id="8Bh-y9-RK0"/>
+                                            <outlet property="userEmail" destination="9Gv-Uy-OfJ" id="LVY-bi-oHN"/>
                                             <outlet property="userName" destination="HFe-Mc-MYV" id="Gj1-il-6Ko"/>
                                         </connections>
                                     </tableViewCell>
@@ -64,7 +64,7 @@
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="MnL-B6-vEq" secondAttribute="bottom" id="4Ih-0k-zww"/>
                             <constraint firstItem="MnL-B6-vEq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Vcm-Qx-KDR"/>
-                            <constraint firstItem="MnL-B6-vEq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="eFK-6p-qaK"/>
+                            <constraint firstItem="MnL-B6-vEq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="28" id="eFK-6p-qaK"/>
                             <constraint firstAttribute="trailing" secondItem="MnL-B6-vEq" secondAttribute="trailing" id="wJ9-eF-f0Y"/>
                         </constraints>
                     </view>

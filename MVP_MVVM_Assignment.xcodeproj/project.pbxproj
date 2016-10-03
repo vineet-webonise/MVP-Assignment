@@ -10,6 +10,8 @@
 		843847B41D953FB800CDF0CA /* UserListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843847B31D953FB800CDF0CA /* UserListTableViewCell.swift */; };
 		843847B51D953FB800CDF0CA /* UserListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843847B31D953FB800CDF0CA /* UserListTableViewCell.swift */; };
 		843847B61D953FB800CDF0CA /* UserListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843847B31D953FB800CDF0CA /* UserListTableViewCell.swift */; };
+		845ED9CF1D9AC9260026D84F /* UserListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845ED9CE1D9AC9260026D84F /* UserListViewModelTests.swift */; };
+		845ED9D01D9AC9260026D84F /* UserListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845ED9CE1D9AC9260026D84F /* UserListViewModelTests.swift */; };
 		846235B81D9417FF00A708D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846235B71D9417FF00A708D9 /* AppDelegate.swift */; };
 		846235BA1D9417FF00A708D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846235B91D9417FF00A708D9 /* ViewController.swift */; };
 		846235BD1D9417FF00A708D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846235BB1D9417FF00A708D9 /* Main.storyboard */; };
@@ -30,6 +32,12 @@
 		846236011D941EE000A708D9 /* NetworkConnectionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846236001D941EE000A708D9 /* NetworkConnectionHandler.swift */; };
 		846236021D941EE000A708D9 /* NetworkConnectionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846236001D941EE000A708D9 /* NetworkConnectionHandler.swift */; };
 		846236031D941EE000A708D9 /* NetworkConnectionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846236001D941EE000A708D9 /* NetworkConnectionHandler.swift */; };
+		847D48721D9C0DE000C82E87 /* NSString+Validations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847D48711D9C0DE000C82E87 /* NSString+Validations.swift */; };
+		847D48731D9C0DE000C82E87 /* NSString+Validations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847D48711D9C0DE000C82E87 /* NSString+Validations.swift */; };
+		847D48741D9C0DE000C82E87 /* NSString+Validations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847D48711D9C0DE000C82E87 /* NSString+Validations.swift */; };
+		847D487E1D9C105800C82E87 /* CommonConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847D487D1D9C105800C82E87 /* CommonConstants.swift */; };
+		847D487F1D9C105800C82E87 /* CommonConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847D487D1D9C105800C82E87 /* CommonConstants.swift */; };
+		847D48801D9C105800C82E87 /* CommonConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847D487D1D9C105800C82E87 /* CommonConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +59,7 @@
 
 /* Begin PBXFileReference section */
 		843847B31D953FB800CDF0CA /* UserListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserListTableViewCell.swift; sourceTree = "<group>"; };
+		845ED9CE1D9AC9260026D84F /* UserListViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserListViewModelTests.swift; sourceTree = "<group>"; };
 		846235B41D9417FF00A708D9 /* MVP_MVVM_Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVP_MVVM_Assignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		846235B71D9417FF00A708D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		846235B91D9417FF00A708D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +78,8 @@
 		846235F01D941C3100A708D9 /* UserListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserListModel.swift; sourceTree = "<group>"; };
 		846235F81D941C7200A708D9 /* UserListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
 		846236001D941EE000A708D9 /* NetworkConnectionHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConnectionHandler.swift; sourceTree = "<group>"; };
+		847D48711D9C0DE000C82E87 /* NSString+Validations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSString+Validations.swift"; sourceTree = "<group>"; };
+		847D487D1D9C105800C82E87 /* CommonConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,19 +130,18 @@
 		846235B61D9417FF00A708D9 /* MVP_MVVM_Assignment */ = {
 			isa = PBXGroup;
 			children = (
-				84B257C21D995BDC00B1BA8B /* Utility */,
 				846235B71D9417FF00A708D9 /* AppDelegate.swift */,
-				846235B91D9417FF00A708D9 /* ViewController.swift */,
-				846235BB1D9417FF00A708D9 /* Main.storyboard */,
-				846235EC1D941B2C00A708D9 /* UserDataSourceHandler.swift */,
-				846235F01D941C3100A708D9 /* UserListModel.swift */,
-				846235F81D941C7200A708D9 /* UserListViewModel.swift */,
-				846236001D941EE000A708D9 /* NetworkConnectionHandler.swift */,
-				843847B31D953FB800CDF0CA /* UserListTableViewCell.swift */,
+				847D48791D9C0F2300C82E87 /* ViewController */,
+				847D48781D9C0F0B00C82E87 /* View */,
+				847D48771D9C0ED600C82E87 /* DataSourceHandlers */,
+				847D48761D9C0EB600C82E87 /* ViewModel */,
+				847D48751D9C0E9E00C82E87 /* Model */,
+				847D48701D9C0D9600C82E87 /* Utility */,
+				847D487A1D9C0F3700C82E87 /* CustomCells */,
+				847D487B1D9C0F5200C82E87 /* Network */,
+				847D487C1D9C103C00C82E87 /* Common */,
 				846235C11D9417FF00A708D9 /* Assets.xcassets */,
-				846235C31D9417FF00A708D9 /* LaunchScreen.storyboard */,
 				846235C61D9417FF00A708D9 /* Info.plist */,
-				846235BE1D9417FF00A708D9 /* MVP_MVVM_Assignment.xcdatamodeld */,
 			);
 			path = MVP_MVVM_Assignment;
 			sourceTree = "<group>";
@@ -141,6 +151,7 @@
 			children = (
 				846235CF1D9417FF00A708D9 /* MVP_MVVM_AssignmentTests.swift */,
 				846235D11D9417FF00A708D9 /* Info.plist */,
+				845ED9CE1D9AC9260026D84F /* UserListViewModelTests.swift */,
 			);
 			path = MVP_MVVM_AssignmentTests;
 			sourceTree = "<group>";
@@ -154,11 +165,78 @@
 			path = MVP_MVVM_AssignmentUITests;
 			sourceTree = "<group>";
 		};
-		84B257C21D995BDC00B1BA8B /* Utility */ = {
+		847D48701D9C0D9600C82E87 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				847D48711D9C0DE000C82E87 /* NSString+Validations.swift */,
 			);
 			name = Utility;
+			sourceTree = "<group>";
+		};
+		847D48751D9C0E9E00C82E87 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				846235F01D941C3100A708D9 /* UserListModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		847D48761D9C0EB600C82E87 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				846235F81D941C7200A708D9 /* UserListViewModel.swift */,
+				846235BE1D9417FF00A708D9 /* MVP_MVVM_Assignment.xcdatamodeld */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		847D48771D9C0ED600C82E87 /* DataSourceHandlers */ = {
+			isa = PBXGroup;
+			children = (
+				846235EC1D941B2C00A708D9 /* UserDataSourceHandler.swift */,
+			);
+			name = DataSourceHandlers;
+			sourceTree = "<group>";
+		};
+		847D48781D9C0F0B00C82E87 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				846235BB1D9417FF00A708D9 /* Main.storyboard */,
+				846235C31D9417FF00A708D9 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		847D48791D9C0F2300C82E87 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				846235B91D9417FF00A708D9 /* ViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		847D487A1D9C0F3700C82E87 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				843847B31D953FB800CDF0CA /* UserListTableViewCell.swift */,
+			);
+			name = CustomCells;
+			sourceTree = "<group>";
+		};
+		847D487B1D9C0F5200C82E87 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				846236001D941EE000A708D9 /* NetworkConnectionHandler.swift */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		847D487C1D9C103C00C82E87 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				847D487D1D9C105800C82E87 /* CommonConstants.swift */,
+			);
+			name = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,8 +379,10 @@
 				846235F11D941C3100A708D9 /* UserListModel.swift in Sources */,
 				846235F91D941C7200A708D9 /* UserListViewModel.swift in Sources */,
 				846235C01D9417FF00A708D9 /* MVP_MVVM_Assignment.xcdatamodeld in Sources */,
+				847D48721D9C0DE000C82E87 /* NSString+Validations.swift in Sources */,
 				846235BA1D9417FF00A708D9 /* ViewController.swift in Sources */,
 				843847B41D953FB800CDF0CA /* UserListTableViewCell.swift in Sources */,
+				847D487E1D9C105800C82E87 /* CommonConstants.swift in Sources */,
 				846236011D941EE000A708D9 /* NetworkConnectionHandler.swift in Sources */,
 				846235ED1D941B2C00A708D9 /* UserDataSourceHandler.swift in Sources */,
 				846235B81D9417FF00A708D9 /* AppDelegate.swift in Sources */,
@@ -316,8 +396,11 @@
 				846235EE1D941B2C00A708D9 /* UserDataSourceHandler.swift in Sources */,
 				846236021D941EE000A708D9 /* NetworkConnectionHandler.swift in Sources */,
 				846235FA1D941C7200A708D9 /* UserListViewModel.swift in Sources */,
+				845ED9CF1D9AC9260026D84F /* UserListViewModelTests.swift in Sources */,
+				847D487F1D9C105800C82E87 /* CommonConstants.swift in Sources */,
 				846235D01D9417FF00A708D9 /* MVP_MVVM_AssignmentTests.swift in Sources */,
 				843847B51D953FB800CDF0CA /* UserListTableViewCell.swift in Sources */,
+				847D48731D9C0DE000C82E87 /* NSString+Validations.swift in Sources */,
 				846235F21D941C3100A708D9 /* UserListModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -329,8 +412,11 @@
 				846235EF1D941B2C00A708D9 /* UserDataSourceHandler.swift in Sources */,
 				846236031D941EE000A708D9 /* NetworkConnectionHandler.swift in Sources */,
 				846235FB1D941C7200A708D9 /* UserListViewModel.swift in Sources */,
+				845ED9D01D9AC9260026D84F /* UserListViewModelTests.swift in Sources */,
+				847D48801D9C105800C82E87 /* CommonConstants.swift in Sources */,
 				846235DB1D9417FF00A708D9 /* MVP_MVVM_AssignmentUITests.swift in Sources */,
 				843847B61D953FB800CDF0CA /* UserListTableViewCell.swift in Sources */,
+				847D48741D9C0DE000C82E87 /* NSString+Validations.swift in Sources */,
 				846235F31D941C3100A708D9 /* UserListModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

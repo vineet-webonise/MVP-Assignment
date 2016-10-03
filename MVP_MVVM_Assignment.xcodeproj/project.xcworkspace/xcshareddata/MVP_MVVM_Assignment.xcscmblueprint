@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "E7A3926D138C0462A774C3B5D46818689BF79ACB",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "E7A3926D138C0462A774C3B5D46818689BF79ACB" : 9223372036854775807,
+    "0BB9418A559546F97EEBAA5D8E08DD3BF83FAC0B" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "D24D9FCE-31FF-404D-B924-A47CC0A9392E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "E7A3926D138C0462A774C3B5D46818689BF79ACB" : "MVP_MVVM_Assignment\/",
+    "0BB9418A559546F97EEBAA5D8E08DD3BF83FAC0B" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MVP_MVVM_Assignment",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MVP_MVVM_Assignment.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/vineet-webonise\/git-assignment.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0BB9418A559546F97EEBAA5D8E08DD3BF83FAC0B"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/vineet-webonise\/MVP-Assignment.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E7A3926D138C0462A774C3B5D46818689BF79ACB"
+    }
+  ]
+}
